@@ -23,3 +23,12 @@ jobs:
         run: |
           cd product-service
           ./gradlew clean build
+
+      - name: Docker build
+        run: echo "Building docker image"
+
+      - name: Run tests
+        run: echo "Running tests"
+
+      - name: Deploy product service
+        run: echo "Deploying the service"
